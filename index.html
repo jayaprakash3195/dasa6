@@ -20,6 +20,27 @@
     .rasi-name { font-weight: bold; font-size: 15.5px; color: #f20909; margin-bottom: 4px; text-align: center;}
     .line { cursor: pointer; width: 100%; border-radius: 4px; padding: 3px 2px; margin-bottom: 1.5px; line-height: 1.5; transition: background 0.3s, color 0.3s;}
     .line:hover { background: #e9f0f9; }
+    .pos-relative { position: relative; }
+    #suggestions-box {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border: 1px solid #aaa;
+      background: white;
+      max-height: 140px;
+      overflow-y: auto;
+      z-index: 9999;
+      display: none;
+      font-size: 0.9em;
+    }
+    #suggestions-box div {
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+    #suggestions-box div:hover {
+      background: #eef;
+    }
     /* ... all your feature/pada/dasa mode/button, tree and highlight classes from the second file ... */
     /* Please paste the rest of your style code here for highlight, mode, upload, tree, etc. (truncated for brevity) */
     /* Reuse your CSS from earlier for all features. */
